@@ -3,14 +3,12 @@
 // you have to make the code optimum so that it can take less time and space 
 
 
-
-
 function checkPrime(num) {
 
-    if(num <= 1 || num == undefined) {
+    if(num <= 1) {
         return false;
     }
-    for(let i = 2; i<=num**0.5; i++){
+    for(let i = 2; i<=(num**0.5); i++){
         if(num%i === 0){
             return false;
         }
