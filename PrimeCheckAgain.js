@@ -17,10 +17,14 @@ function checkPrime(num) {
     }
     return true;
 }
-let num = 11;
 
-if(checkPrime(num)){
-    console.log("It is a Prime number");
-}else {
-    console.log("Not a Prime number");
+// here to get the multiple numbers to check we can use loop here
+
+for(let i = 1; i<=20; i++){
+
+    if(checkPrime(i)){
+        console.log(i,"is a Prime number");
+    }else {
+        console.log(i,"Not a Prime number");
+    }
 }
